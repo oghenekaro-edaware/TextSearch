@@ -8,5 +8,6 @@ var target = Environment.GetEnvironmentVariable("TARGET") ?? "World";
 var app = builder.Build();
 
 app.MapGet("/", () => Class1.PrintHello());
+app.MapGet("/developer-name", () => "Edaware Oghenekaro Richard");
 
 app.Run(url);
